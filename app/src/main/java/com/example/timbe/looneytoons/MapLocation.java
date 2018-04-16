@@ -8,6 +8,13 @@ public class MapLocation implements Comparable<MapLocation> {
     private String address;
 
     public MapLocation(String name, double lat, double lng, String address) {
+        if (name == null || name.equals("")) {
+            throw new IllegalArgumentException("MapLocation Name should not be empty or null");
+        }
+        if (address == null || address.equals("")) {
+            throw new IllegalArgumentException("MapLocation Address should not be emtpy or null");
+        }
+
         this.name = name;
         this.lat = lat;
         this.lng = lng;
