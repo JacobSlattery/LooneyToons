@@ -1,5 +1,5 @@
 package com.example.timbe.looneytoons;
 
-public class ParseAdapter {
+public class JsonGoogleMapParser {
 
 }
