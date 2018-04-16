@@ -36,9 +36,7 @@ public class OldMapsActivity extends FragmentActivity implements OnMapReadyCallb
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
-
         this.callPlaceAutocompleteActivityIntent();
-
 
     }
 
